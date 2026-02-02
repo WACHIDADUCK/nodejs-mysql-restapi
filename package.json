@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "pretest": "cross-env NODE_ENV=test jest --clearCache",
 
     "lint": "eslint .",
-
+    
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "test:coverage":  "NODE_OPTIONS=--experimental-vm-modules jest  --detectOpenHandles --coverage --ci"
   },
   "keywords": [],
